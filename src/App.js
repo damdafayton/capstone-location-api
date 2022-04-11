@@ -1,16 +1,19 @@
-import { Routes, Route, NavLink } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.scss';
+
+import Home from './components/Home';
 
 function App() {
   return (
     <>
-      <ul className="d-flex">
-        <li><NavLink to="/books">BOOKS</NavLink></li>
-        <li><NavLink to="/categories">CATEGORIES</NavLink></li>
-      </ul>
+      <nav>
+        <ul className="d-flex">
+          {/* <li><NavLink to="/home">HOME</NavLink></li> */}
+        </ul>
+      </nav>
       <Routes>
-        <Route path="*" />
-        <Route />
+        <Route path="*" element={<Home />} />
+        <Route path="/:continentId" />
       </Routes>
     </>
   );
