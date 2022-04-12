@@ -1,19 +1,25 @@
 import { Routes, Route } from 'react-router-dom';
-import { useLayoutEffect, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 import './App.scss';
 
 import Home from './components/Home';
 import Neighbors from './components/Neighbors';
 
-import { setUserLocationAsync } from './redux/location/locationReducer';
+import { setUserLocationAsync, setNeighborsAsync } from './redux/location/locationReducer';
 
 function App() {
   const dispatch = useDispatch();
+  const { iso } = useSelector((state) => state.location);
+
   useEffect(() => {
     dispatch(setUserLocationAsync());
   }, []);
+
+  useEffect(() => {
+    dispatch(setNeighborsAsync(iso));
+  }, [iso]);
 
   return (
     <>
@@ -24,7 +30,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/*" element={<Home />} />
-        <Route path="/country/:neighbor" element={<Neighbors />} />
+        <Route path="/country/:iso" element={<Neighbors />} />
       </Routes>
     </>
   );

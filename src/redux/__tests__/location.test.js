@@ -1,4 +1,4 @@
-import locationReducer, { setUserLocation, setNeighborsMain } from "../location/locationReducer";
+import locationReducer, { setUserLocation, setNeighborsMain, setActiveCountry } from "../location/locationReducer";
 import sampleApi from './_sample_response.json'
 import * as api from '../../api'
 
@@ -21,5 +21,10 @@ describe('location reducer tests', () => {
   test('neighbor reducer and dispatch', () => {
     expect(locationReducer(undefined, setNeighborsMain(USNEIGHBORS)))
       .toEqual({ neighborsMain: USNEIGHBORS })
+  })
+
+  test('to set active country when user chooses a country', () => {
+    expect(locationReducer(undefined, setActiveCountry({ "country_code": "CA", "country_name": "Canada" })))
+      .toEqual({ activeCountry: { "country_code": "CA", "country_name": "Canada" } })
   })
 })

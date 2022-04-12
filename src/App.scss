@@ -15,6 +15,14 @@ li {
   pointer-events: none;
 }
 
+.svg-w-10 {
+  width: 10rem;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
