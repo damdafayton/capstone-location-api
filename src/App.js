@@ -1,9 +1,20 @@
 import { Routes, Route } from 'react-router-dom';
+import { useLayoutEffect, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
 import './App.scss';
 
 import Home from './components/Home';
+import Neighbors from './components/Neighbors';
+
+import { setUserLocationAsync } from './redux/location/locationReducer';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setUserLocationAsync());
+  }, []);
+
   return (
     <>
       <nav>
@@ -12,8 +23,8 @@ function App() {
         </ul>
       </nav>
       <Routes>
-        <Route path="*" element={<Home />} />
-        <Route path="/:continentId" />
+        <Route path="/*" element={<Home />} />
+        <Route path="/country/:neighbor" element={<Neighbors />} />
       </Routes>
     </>
   );

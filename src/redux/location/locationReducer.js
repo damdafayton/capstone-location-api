@@ -1,15 +1,41 @@
-const SET_COUNTRY = 'location/set_country'
-const SET_CITY = 'location/set_city'
+import * as api from '../../api';
 
-export const countrySetter = (payload) => ({ type: SET_COUNTRY, payload })
-export const citySetter = (payload) => ({ type: SET_CITY, payload })
+const FETCH_USER_LOCATION = 'location/fetch_user_location';
+const SET_NEIGHBORS_MAIN = 'location/set_neighbors_main';
+const SET_NEIGHBORS_SECONDARY = 'location/set_neighbors_secondary';
+
+export const setUserLocation = (payload) => ({ type: FETCH_USER_LOCATION, payload });
+export const setNeighborsMain = (payload) => ({ type: SET_NEIGHBORS_MAIN, payload });
+export const setNeighborsSecondary = (payload) => ({ type: SET_NEIGHBORS_SECONDARY, payload });
+
+export const setUserLocationAsync = () => async (dispatch) => {
+  const userLocation = await api.getLocation();
+  dispatch(setUserLocation(userLocation));
+};
+
+export const setNeighborsAsync = (countryISO, secondary = false) => async (dispatch) => {
+  if (!countryISO) return;
+  const neighbors = await api.getNeighbors(countryISO);
+  if (secondary) {
+    dispatch(setNeighborsSecondary(neighbors));
+  } else {
+    dispatch(setNeighborsMain(neighbors));
+  }
+};
 
 export default (state = {}, action) => {
   switch (action.type) {
-    case SET_COUNTRY:
-      return { ...state, country: action.payload }
-    case SET_CITY:
-      return { ...state, city: action.payload }
+    case FETCH_USER_LOCATION:
+      return {
+        ...state,
+        country: action.payload.country,
+        city: action.payload.city,
+        iso: action.payload.country_code,
+      };
+    case SET_NEIGHBORS_MAIN:
+      return { ...state, neighborsMain: action.payload };
+    case SET_NEIGHBORS_SECONDARY:
+      return { ...state, neighborsSecondary: action.payload };
     default: return state;
   }
 };

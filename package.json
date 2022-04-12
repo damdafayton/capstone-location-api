@@ -8,7 +8,6 @@
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.17.7",
     "@babel/preset-react": "^7.16.7",
-    "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
@@ -24,8 +23,10 @@
     "stylelint-scss": "^3.21.0"
   },
   "dependencies": {
+    "@testing-library/react": "^12.1.4",
     "@testing-library/jest-dom": "^5.16.3",
     "bootstrap": "^5.1.3",
+    "local-cors-proxy": "^1.1.0",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -35,6 +36,7 @@
     "react-scripts": "5.0.0",
     "redux": "^4.1.2",
     "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.1",
     "sass": "^1.49.9",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
@@ -43,7 +45,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "proxy": "lcp --proxyUrl https://api.geodatasource.com"
   },
   "eslintConfig": {
     "extends": [
