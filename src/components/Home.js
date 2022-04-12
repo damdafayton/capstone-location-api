@@ -1,22 +1,15 @@
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux'
-
-import * as api from '../api';
-
-import { countrySetter, citySetter } from '../redux/location/locationReducer';
+import { useSelector, useDispatch } from 'react-redux';
 
 export default function Home() {
-  const dispatch = useDispatch()
-
-  useEffect(() => {
-    (async () => {
-      const [country, city] = await api.getLocation();
-      dispatch(countrySetter(country))
-      dispatch(citySetter(city))
-    })();
-  }, []);
+  const { neighbors, country, city } = useSelector((state) => state.location);
+  // useSelector();
 
   return (
-    <span>hi</span>
+    country &&
+    <main>
+      <section> <span>{`${country} - ${city}`}</span></section>
+      <section>
+      </section>
+    </main>
   );
 }
