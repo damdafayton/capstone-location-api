@@ -1,10 +1,15 @@
 # Location API - Capstone Project
 
+This application detects the location (country, city/state) of the visitor from the IP and shows the neighboring countries.
+
+Two API's are used in this project:
+1 - https://www.geojs.io - to receive location data of the user based on ip
+2 - https://api.geodatasource.com - to find the neighboring countries of the user
+
 ## Built With
 
 - HTML, CSS, JS
-- Bootstrap, SCSS, React
-
+- Bootstrap, SCSS, React, Redux
 
 ## Live Demo
 
@@ -35,7 +40,8 @@ You may also see any lint errors in the console.
 
 ### Launch the test runner in the interactive watch mode
 
-`npm test`
+`$ npm run proxy`
+`$ npm test`
 
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
