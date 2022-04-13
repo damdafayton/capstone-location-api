@@ -5,7 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import './App.scss';
 
 import Home from './components/Home';
-import Neighbors from './components/Neighbors';
+import Country from './components/Country';
+import Nav from './components/layout/Nav';
 
 import { setUserLocationAsync, setNeighborsAsync } from './redux/location/locationReducer';
 
@@ -23,14 +24,10 @@ function App() {
 
   return (
     <>
-      <nav>
-        <ul className="d-flex">
-          {/* <li><NavLink to="/home">HOME</NavLink></li> */}
-        </ul>
-      </nav>
+      <Nav />
       <Routes>
         <Route path="/*" element={<Home />} />
-        <Route path="/country/:iso" element={<Neighbors />} />
+        <Route path="/country/:iso" element={<Country />} />
       </Routes>
     </>
   );

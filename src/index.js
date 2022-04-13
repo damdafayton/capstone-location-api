@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faAngleLeft, faMicrophone, faGear, faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 import store from './redux/configureStore';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './bootstrap';
+
+library.add(faAngleLeft, faMicrophone, faGear, faCircleArrowRight);
 
 const githubBasename = process.env.REACT_APP_BASENAME || '/';
 
