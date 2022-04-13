@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import Layout from './layout/Layout'
+import Layout from './layout/Layout';
 
 export default function Home() {
   const {
@@ -9,7 +9,7 @@ export default function Home() {
   return (country
     && (
       <Layout
-        title='NEIGHBORING COUNTRIES'
+        title="NEIGHBORING COUNTRIES"
         neighbors={neighborsMain}
         country={country}
         city={city}

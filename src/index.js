@@ -5,7 +5,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faAngleLeft, faMicrophone, faGear, faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAngleLeft, faMicrophone, faGear, faCircleArrowRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 import store from './redux/configureStore';
 

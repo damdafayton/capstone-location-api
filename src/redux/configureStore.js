@@ -3,11 +3,11 @@ import { logger } from 'redux-logger';
 import thunk from 'redux-thunk';
 
 import locationReducer from './location/locationReducer';
-import settingsReducer from './settings/settingsReducer'
+import settingsReducer from './settings/settingsReducer';
 
 const rootReducer = combineReducers({
   location: locationReducer,
-  settings: settingsReducer
+  settings: settingsReducer,
 });
 
 const middlewares = [thunk];
