@@ -35,7 +35,7 @@ export default Toggle;
 
 Toggle.propTypes = {
   onChange: PropTypes.func,
-  checked: PropTypes.bool,
+  checked: PropTypes.number,
   toggleLabel: PropTypes.string,
   className: PropTypes.string,
 };
