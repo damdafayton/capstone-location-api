@@ -9,7 +9,7 @@ export default function Layout({
     && (
       <main className="fluid bg-secondary text-white">
         <section className="min-vh-40 position-relative row row-cols-2 mx-0 align-items-center fs-5">
-          <img alt="flag" className="max-100 px-3 py-3 top-0 start-0" src={flagSvgLink(iso)} />
+          <img alt="flag" className="max-100 px-4 py-3 top-0 start-0" src={flagSvgLink(iso)} />
           <span className="">
             {children}
           </span>
