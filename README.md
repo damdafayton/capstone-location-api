@@ -3,8 +3,8 @@
 This application detects the location (country, city/state) of the visitor from the IP and shows the neighboring countries.
 
 Two API's are used in this project:
-1 - https://www.geojs.io - to identify location data of the user based on ip
-2 - https://api.geodatasource.com - to get the neighboring countries of the user's country
+1. https://www.geojs.io - to identify location data of the user based on ip
+2. https://api.geodatasource.com - to get the neighboring countries of the visitor's country
 
 ## Built With
 
