@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/capstone-location-api/build/static/css/main.0d880fc9.css",
-    "main.js": "/capstone-location-api/build/static/js/main.0e894786.js",
+    "main.css": "/capstone-location-api/build/static/css/main.8ad95630.css",
+    "main.js": "/capstone-location-api/build/static/js/main.2963a278.js",
     "static/js/787.111e1f6b.chunk.js": "/capstone-location-api/build/static/js/787.111e1f6b.chunk.js",
     "static/media/Gill Sans Medium.otf": "/capstone-location-api/build/static/media/Gill Sans Medium.6d4fc7f84156dec0ed02.otf",
     "index.html": "/capstone-location-api/build/index.html",
-    "main.0d880fc9.css.map": "/capstone-location-api/build/static/css/main.0d880fc9.css.map",
-    "main.0e894786.js.map": "/capstone-location-api/build/static/js/main.0e894786.js.map",
+    "main.8ad95630.css.map": "/capstone-location-api/build/static/css/main.8ad95630.css.map",
+    "main.2963a278.js.map": "/capstone-location-api/build/static/js/main.2963a278.js.map",
     "787.111e1f6b.chunk.js.map": "/capstone-location-api/build/static/js/787.111e1f6b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d880fc9.css",
-    "static/js/main.0e894786.js"
+    "static/css/main.8ad95630.css",
+    "static/js/main.2963a278.js"
   ]
 }
