@@ -40,8 +40,8 @@
     "redux": "^4.1.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
-    "serve": "^9.4.0",
     "sass": "^1.49.9",
+    "serve": "^9.6.0",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
@@ -51,7 +51,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "proxy": "lcp --proxyUrl https://api.geodatasource.com"
+    "proxy": "lcp --proxyUrl https://api.geodatasource.com",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": [

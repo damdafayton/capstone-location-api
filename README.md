@@ -31,7 +31,7 @@ $ npm run proxy
 ```
 In seperate terminal:
 ```
-$ npm start
+$ npm run dev
 ```
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
