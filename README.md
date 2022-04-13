@@ -1,4 +1,4 @@
-![](./capstone_location_ss.gif)
+<span>![](./capstone_location_ss.gif)</span>
 
 # Location API - Capstone Project
 
