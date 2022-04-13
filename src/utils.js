@@ -1,4 +1,5 @@
-export const flagSvgLink = (countryISO) => `https://flagcdn.com/${countryISO.toLowerCase()}.svg`;
+export const flagSvgLink = (countryISO) => countryISO
+  && `https://flagcdn.com/${countryISO.toLowerCase()}.svg`;
 
 export function bgSelector(i, horizontal = false) {
   const LIGHT = 'bg-light';

@@ -1,0 +1,34 @@
+[
+  {
+    "country_code": "AL",
+    "country_name": "Albania"
+  },
+  {
+    "country_code": "BA",
+    "country_name": "Bosnia and Herzegovina"
+  },
+  {
+    "country_code": "BG",
+    "country_name": "Bulgaria"
+  },
+  {
+    "country_code": "HR",
+    "country_name": "Croatia"
+  },
+  {
+    "country_code": "HU",
+    "country_name": "Hungary"
+  },
+  {
+    "country_code": "ME",
+    "country_name": "Montenegro"
+  },
+  {
+    "country_code": "MK",
+    "country_name": "North Macedonia"
+  },
+  {
+    "country_code": "RO",
+    "country_name": "Romania"
+  }
+]
