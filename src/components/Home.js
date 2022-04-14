@@ -3,14 +3,14 @@ import Layout from './layout/Layout';
 
 export default function Home() {
   const {
-    neighborsMain, country, city, iso,
+    neighbors, country, city, iso,
   } = useSelector((state) => state.location);
 
   return (country
     && (
       <Layout
         title="NEIGHBORING COUNTRIES"
-        neighbors={neighborsMain}
+        neighbors={neighbors}
         country={country}
         city={city}
         iso={iso}

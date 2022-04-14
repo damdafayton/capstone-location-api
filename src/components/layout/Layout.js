@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import Neighbors from '../Neighbors';
 import { flagSvgLink } from '../../utils';
 
@@ -15,7 +16,9 @@ export default function Layout({
           </span>
         </section>
         <section>
-          <h2 className="bg-info fs-6 px-2 py-1 mb-0">{title}</h2>
+          <div>
+            <h2 className="bg-info fs-6 px-2 py-1 mb-0">{title}</h2>
+          </div>
           <Neighbors neighbors={neighbors} />
         </section>
       </main>

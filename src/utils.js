@@ -28,3 +28,12 @@ export function sectionBgSelector(length) {
   }
   return className;
 }
+
+export function initialsOfNeighbors(listOfObjects) {
+  const initalsList = ['All'];
+  listOfObjects.forEach((obj) => {
+    const initial = obj.country_name.slice(0, 1);
+    if (!initalsList.find((el) => el === initial)) { initalsList.push(initial); }
+  });
+  return initalsList;
+}

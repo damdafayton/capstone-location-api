@@ -1,14 +1,14 @@
 import * as api from '../../api';
 
 const FETCH_USER_LOCATION = 'location/fetch_user_location';
-const SET_NEIGHBORS_MAIN = 'location/set_neighbors_main';
-const SET_NEIGHBORS_SECONDARY = 'location/set_neighbors_secondary';
+const SET_NEIGHBORS = 'location/set_neighbors';
 const SET_ACTIVE_COUNTRY = 'location/set_active_country';
+const FILTER_NEIGHBORS = 'location/filter_neighbors';
 
 export const setUserLocation = (payload) => ({ type: FETCH_USER_LOCATION, payload });
-export const setNeighborsMain = (payload) => ({ type: SET_NEIGHBORS_MAIN, payload });
-export const setNeighborsSecondary = (payload) => ({ type: SET_NEIGHBORS_SECONDARY, payload });
+export const setNeighbors = (payload) => ({ type: SET_NEIGHBORS, payload });
 export const setActiveCountry = (payload) => ({ type: SET_ACTIVE_COUNTRY, payload });
+export const filterNeighbors = (payload) => ({ type: FILTER_NEIGHBORS, payload });
 
 export const setUserLocationAsync = () => async (dispatch) => {
   const userLocation = await api.getLocation();
@@ -19,9 +19,9 @@ export const setNeighborsAsync = (countryISO, secondary = false) => async (dispa
   if (!countryISO) return;
   const neighbors = await api.getNeighbors(countryISO);
   if (secondary) {
-    dispatch(setNeighborsSecondary(neighbors));
+    dispatch(setNeighbors(neighbors));
   } else {
-    dispatch(setNeighborsMain(neighbors));
+    dispatch(setNeighbors(neighbors));
   }
 };
 
@@ -34,10 +34,15 @@ export default (state = {}, action) => {
         city: action.payload.city,
         iso: action.payload.country_code,
       };
-    case SET_NEIGHBORS_MAIN:
-      return { ...state, neighborsMain: action.payload };
-    case SET_NEIGHBORS_SECONDARY:
-      return { ...state, neighborsSecondary: action.payload };
+    case SET_NEIGHBORS:
+      return { ...state, neighbors: action.payload, neighborsOrigin: action.payload };
+    case FILTER_NEIGHBORS:
+      return {
+        ...state,
+        neighbors: state.neighborsOrigin.filter((country) => (
+          country.country_name.search(action.payload) === 0
+        )),
+      };
     case SET_ACTIVE_COUNTRY:
       return { ...state, activeCountry: action.payload };
     default: return state;

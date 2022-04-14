@@ -17,7 +17,7 @@ jest.mock('react-router-dom', () => ({
 
 jest.mock('@fortawesome/react-fontawesome');
 
-const mockLocation = { neighborsMain: neighbors };
+const mockLocation = { neighbors };
 const mockSettings = { tabs: 0 };
 
 jest.mock('react-redux', () => ({
@@ -46,7 +46,7 @@ test('to render Layout', () => {
   expect(screen.getByText('CHILDREN')).toBeVisible();
 });
 
-test('to render Nav bar page', () => {
+test('to render Nav bar component', () => {
   render(<Nav />);
   expect(screen.getByText('HOME')).toBeVisible();
 });
