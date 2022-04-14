@@ -60,7 +60,7 @@ export default function Nav() {
           <Toggle className="mx-3" checked={tabs} onChange={() => dispatch(toggleTabs())} />
           <FontAwesomeIcon icon="microphone" />
           <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
-            <button type="button" className="btn px-0 text-white">
+            <button type="button" className="btn p-0 text-white">
               <FontAwesomeIcon icon="gear" className="ms-3 cursor-pointer" />
               {' '}
             </button>
