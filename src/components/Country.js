@@ -9,7 +9,12 @@ import * as api from '../api';
 
 export default function Country() {
   const dispatch = useDispatch();
-  const { neighbors, activeCountry: { country_name: name, country_code: isoFromRedux } = {} } = useSelector((state) => state.location);
+  const {
+    neighbors, activeCountry: {
+      country_name: name,
+      country_code: isoFromRedux,
+    } = {},
+  } = useSelector((state) => state.location);
 
   const { iso } = useParams();
 
