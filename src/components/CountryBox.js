@@ -31,12 +31,14 @@ export default function CountryBox({ country, addClass }) {
           </Link>
         )}
       <Link to={`/country/${iso.toLowerCase()}`} onClick={() => clickHandler()} className="">
-        <h3 className="pb-2 pt-4 text-end fs-5 text-white hover-1">{name.toUpperCase()}</h3>
+        <h3 className={`pb-2 pt-4 fs-5 text-white hover-1 ${!tabs ? 'text-end' : 'text-start'}`}>
+          {name.toUpperCase()}
+        </h3>
       </Link>
       <Link
         to={`/country/${iso.toLowerCase()}`}
         onClick={() => clickHandler()}
-        className={`${!tabs ? 'position-absolute' : 'align-self-center'} arrow-right`}
+        className={`${!tabs ? 'position-absolute' : 'ms-5 align-self-center'} arrow-right`}
       >
         <FontAwesomeIcon
           icon="circle-arrow-right"
