@@ -15,7 +15,7 @@ Two API's are used in this project:
 
 ## Live Demo
 
-- [Live Demo Link](https://damdafayton.github.io/capstone-location-api/build/)
+- [Live Demo Link](https://damdafayton-countries.herokuapp.com/)
 
 ## Available Scripts
 
