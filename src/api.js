@@ -2,9 +2,11 @@
 const FIND_LOCATION_FROM_IP = 'https://get.geojs.io/v1/ip/geo.json';
 
 // https://www.geodatasource.com/
-const GEODATA_KEY = 'DNWFSQC3OHHXZHR46KW4JSKFWNAVOHPA';
-const FIND_NEIGHBORS_FROM_ISO = process.env.REACT_APP_NO_PROXY === 'production'
-  ? 'https://api.geodatasource.com/v2/neighboring-countries'
+const PROXY = 'https://safe-ridge-22036.herokuapp.com/';
+const GEODATA_KEY = process.env.REACT_APP_GEODATA_KEY;
+console.log(process.env.NODE_ENV);
+const FIND_NEIGHBORS_FROM_ISO = process.env.NODE_ENV === 'production'
+  ? `${PROXY}https://api.geodatasource.com/v2/neighboring-countries`
   : 'http://localhost:8010/proxy/v2/neighboring-countries';
 
 export const getLocation = () => fetch(FIND_LOCATION_FROM_IP)

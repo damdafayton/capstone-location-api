@@ -48,14 +48,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "__start": "serve -s build",
+    "_start": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "proxy": "lcp --proxyUrl https://api.geodatasource.com",
-    "__heroku-cleanup": "npm run proxy",
-    "__heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": [
