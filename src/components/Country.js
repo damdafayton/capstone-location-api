@@ -33,15 +33,13 @@ export default function Country() {
 
   return (
     neighbors
-    && name
     && (
       <Layout
         title="NEIGHBORING COUNTRIES"
         neighbors={neighbors}
-        country={name}
         iso={iso}
       >
-        <h1>{name.toUpperCase()}</h1>
+        <h1>{name && name.toUpperCase()}</h1>
       </Layout>
     )
   );
