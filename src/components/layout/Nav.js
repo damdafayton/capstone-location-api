@@ -35,7 +35,7 @@ export default function Nav() {
       <Popover.Header as="h3" className="text-black">Filter</Popover.Header>
       <Popover.Body>
         <Select
-          onChange={() => selectHandler()}
+          onChange={(e) => selectHandler(e)}
           options={initials}
           placeholder="All"
         />
