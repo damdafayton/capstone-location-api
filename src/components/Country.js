@@ -9,7 +9,10 @@ import * as api from '../api';
 
 export default function Country() {
   const dispatch = useDispatch();
-  const { neighbors, activeCountry } = useSelector((state) => state.location);
+  const { neighbors, activeCountry: {
+    country_code: countryCode,
+    country_name: countryName
+  } = {} } = useSelector((state) => state.location);
 
   const { iso } = useParams();
 
@@ -18,7 +21,7 @@ export default function Country() {
   }, [iso]);
 
   useEffect(() => {
-    if (iso !== activeCountry.country_code) {
+    if (iso !== countryCode) {
       // Fetch neighbors of first neighbor and filter origin country by iso code
       (async () => {
         const neighborsOfFirst = neighbors
@@ -38,7 +41,7 @@ export default function Country() {
         neighbors={neighbors}
         iso={iso}
       >
-        {activeCountry && <h1>{activeCountry.country_name.toUpperCase()}</h1>}
+        {countryName && <h1>{countryName.toUpperCase()}</h1>}
       </Layout>
     )
   );
