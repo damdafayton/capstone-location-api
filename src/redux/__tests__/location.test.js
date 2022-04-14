@@ -20,7 +20,7 @@ describe('location reducer tests', () => {
 
   test('neighbor reducer and dispatch', () => {
     expect(locationReducer(undefined, setNeighbors(USNEIGHBORS)))
-      .toEqual({ neighbors: USNEIGHBORS })
+      .toEqual({ neighbors: USNEIGHBORS, neighborsOrigin: USNEIGHBORS })
   })
 
   test('to set active country when user chooses a country', () => {
