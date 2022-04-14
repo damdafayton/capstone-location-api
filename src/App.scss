@@ -71,6 +71,12 @@ h3 {
   cursor: pointer;
 }
 
+.wrap-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

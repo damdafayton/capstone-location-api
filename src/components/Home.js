@@ -24,7 +24,7 @@ export default function Home() {
         city={city}
         iso={iso}
       >
-        <h1><span>{`${country.toUpperCase()}, ${city.toUpperCase()}`}</span></h1>
+        {`${country.toUpperCase()}, ${city.toUpperCase()}`}
       </Layout>
     )
   );

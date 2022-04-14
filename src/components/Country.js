@@ -46,7 +46,7 @@ export default function Country() {
         neighbors={neighbors}
         iso={iso}
       >
-        {countryName && <h1>{countryName.toUpperCase()}</h1>}
+        {countryName && countryName.toUpperCase()}
       </Layout>
     )
   );
