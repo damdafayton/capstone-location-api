@@ -1,14 +1,21 @@
+![](./capstone_location_ss.gif)
+
 # Location API - Capstone Project
+
+This application detects the location (country, city/state) of the visitor from the IP and shows the neighboring countries.
+
+Two API's are used in this project:
+1. https://www.geojs.io - to identify location data of the user based on ip
+2. https://api.geodatasource.com - to get the neighboring countries of the visitor's country
 
 ## Built With
 
 - HTML, CSS, JS
-- Bootstrap, SCSS, React
-
+- Bootstrap, SCSS, React, Redux
 
 ## Live Demo
 
-- [Live Demo Link](https://damdafayton.github.io/capstone-location-api/build/)
+- [Live Demo Link](https://damdafayton-countries.herokuapp.com/)
 
 ## Available Scripts
 
@@ -22,8 +29,12 @@ In the project directory, you can:
 ```
 $ git clone git@github.com:damdafayton/bookstore.git
 $ npm install
-$ npm start
-````
+$ npm run proxy
+```
+In seperate terminal:
+```
+$ npm run dev
+```
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
@@ -31,7 +42,13 @@ You may also see any lint errors in the console.
 
 ### Launch the test runner in the interactive watch mode
 
-`npm test`
+```
+$ npm run proxy
+```
+In another terminal:
+```
+$ npm test
+```
 
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
@@ -80,5 +97,7 @@ Give a ⭐️ if you like this project!
 
 
 ## 📝 License
+
+Original design idea by Nelson Sakwa on Behance.
 
 This project is [MIT](./MIT.md) licensed.

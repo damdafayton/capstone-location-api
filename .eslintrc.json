@@ -31,11 +31,13 @@
         ],
         "react/react-in-jsx-scope": "off",
         "import/no-unresolved": "off",
-        "no-shadow": "off"
+        "no-shadow": "off",
+        "react/require-default-props": "off"
     },
     "ignorePatterns": [
         "dist/",
         "build/",
-        "**/__tests__/"
+        "**/__tests__/",
+        "_bootstrap/"
     ]
 }

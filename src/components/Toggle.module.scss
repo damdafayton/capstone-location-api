@@ -1,0 +1,62 @@
+$ballSize: 0.7rem;
+$containerH: 1.2rem;
+$containerW: 2rem;
+$ballShift: 1.1rem;
+$bg1: #2196f3;
+$bg2: #ccc;
+
+.switchLabel {
+  font-size: 0.8rem;
+  display: inline-block;
+  padding: 0.4rem 2rem 0.4rem 0.3rem;
+  align-items: start;
+  white-space: nowrap;
+  position: relative;
+  height: $containerH;
+  width: $containerW;
+}
+
+.sliderSpan {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.beforeSpan {
+  position: absolute;
+  content: "";
+  height: $ballSize;
+  width: $ballSize;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ballChecked {
+  transform: translateX($ballShift);
+}
+
+.checkbox {
+  margin-right: 0.3rem;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.bg1 {
+  background-color: $bg1;
+}
+
+.bg2 {
+  background-color: $bg2;
+}
