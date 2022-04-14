@@ -23,13 +23,16 @@ export default function Country() {
   }, [iso]);
 
   useEffect(() => {
-    if (iso !== countryCode) {
+    console.log('iso = ', iso);
+    if (iso.toUpperCase() !== countryCode) {
       // Fetch neighbors of first neighbor and filter origin country by iso code
+      console.log('iso2 = ', iso);
+
       (async () => {
         const neighborsOfFirst = neighbors
           && await api.getNeighbors(neighbors[0].country_code);
         const visitedCountry = neighborsOfFirst
-          && neighborsOfFirst.filter((neighbor) => neighbor.country_code.toLowerCase() === iso)[0];
+          && neighborsOfFirst.filter((neighbor) => neighbor.country_code === iso.toUpperCase())[0];
         dispatch(setActiveCountry(visitedCountry));
       })();
     }
