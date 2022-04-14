@@ -17,7 +17,9 @@ export default function Layout({
         </section>
         <section>
           <div>
-            <h2 className="bg-info fs-6 px-2 py-1 mb-0">{title}</h2>
+            <h2 className="bg-info fs-6 px-2 py-1 mb-0">
+              {title}
+            </h2>
           </div>
           <Neighbors neighbors={neighbors} />
         </section>
