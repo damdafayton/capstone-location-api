@@ -18,7 +18,7 @@ export default function Layout({
           </span>
         </section>
         <section>
-          <div>
+          <div className="d-flex align-items-center">
             <h2 className="bg-info fs-6 px-2 py-2 mb-0">
               {title}
             </h2>
