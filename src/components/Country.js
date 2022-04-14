@@ -9,13 +9,12 @@ import * as api from '../api';
 
 export default function Country() {
   const dispatch = useDispatch();
-  const { neighbors, activeCountry = {} } = useSelector((state) => state.location);
-  const { country_name: name, country_code: isoFromRedux } = activeCountry && activeCountry;
+  const { neighbors, activeCountry: { country_name: name, country_code: isoFromRedux } = {} } = useSelector((state) => state.location);
 
   const { iso } = useParams();
 
   useEffect(() => {
-    dispatch(setNeighborsAsync(iso, true));
+    dispatch(setNeighborsAsync(iso));
   }, [iso]);
 
   useEffect(() => {

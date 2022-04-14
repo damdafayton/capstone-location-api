@@ -15,14 +15,10 @@ export const setUserLocationAsync = () => async (dispatch) => {
   dispatch(setUserLocation(userLocation));
 };
 
-export const setNeighborsAsync = (countryISO, secondary = false) => async (dispatch) => {
+export const setNeighborsAsync = (countryISO) => async (dispatch) => {
   if (!countryISO) return;
   const neighbors = await api.getNeighbors(countryISO);
-  if (secondary) {
-    dispatch(setNeighbors(neighbors));
-  } else {
-    dispatch(setNeighbors(neighbors));
-  }
+  dispatch(setNeighbors(neighbors));
 };
 
 export default (state = {}, action) => {
