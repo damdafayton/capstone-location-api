@@ -23,10 +23,8 @@ export default function Country() {
   }, [iso]);
 
   useEffect(() => {
-    console.log('iso = ', iso);
     if (iso.toUpperCase() !== countryCode) {
       // Fetch neighbors of first neighbor and filter origin country by iso code
-      console.log('iso2 = ', iso);
 
       (async () => {
         const neighborsOfFirst = neighbors
