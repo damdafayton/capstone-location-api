@@ -24,7 +24,7 @@ export default function Home() {
         city={city}
         iso={iso}
       >
-        {`${country.toUpperCase()}, ${city.toUpperCase()}`}
+        {`${country.toUpperCase()}${city ? `, ${city.toUpperCase()}` : ''}`}
       </Layout>
     )
   );

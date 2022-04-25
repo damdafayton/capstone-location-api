@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
@@ -18,8 +18,10 @@ import './bootstrap';
 library.add(faAngleLeft, faMicrophone, faGear, faCircleArrowRight);
 
 const githubBasename = process.env.REACT_APP_BASENAME || '/';
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router basename={githubBasename}>
@@ -27,7 +29,6 @@ ReactDOM.render(
       </Router>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
