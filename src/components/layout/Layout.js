@@ -19,7 +19,7 @@ export default function Layout({
         </section>
         <section>
           <div className="bg-info py-2">
-            <h2 className="fs-6 px-2 mb-0 flex-grow-1">
+            <h2 className="fs-6 px-2 mb-0 flex-grow-1 font1">
               {title}
             </h2>
           </div>

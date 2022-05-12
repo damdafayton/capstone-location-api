@@ -53,7 +53,7 @@ export default function Nav() {
         />
       </div>
       <div className="text-center">
-        <NavLink to="/" className="text-white hover-1">HOME</NavLink>
+        <NavLink to="/" className="text-white hover-1 font1">HOME</NavLink>
       </div>
       <div className="">
         <span className="d-flex justify-content-end align-items-center">
