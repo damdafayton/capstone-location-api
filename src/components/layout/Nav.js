@@ -49,7 +49,7 @@ export default function Nav() {
         <FontAwesomeIcon
           onClick={() => navigate(-1)}
           icon="angle-left"
-          className="hover-1 cursor-pointer align-middle"
+          className="hover-1 cursor-pointer d-flex align-items-center"
         />
       </div>
       <div className="text-center">
