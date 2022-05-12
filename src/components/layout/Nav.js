@@ -52,8 +52,8 @@ export default function Nav() {
           className="hover-1 cursor-pointer"
         />
       </div>
-      <div className="text-center align-text-bottom">
-        <NavLink to="/" className="text-white hover-1">HOME</NavLink>
+      <div className="text-center line-height-1-5">
+        <NavLink to="/" className="text-white hover-1 align-sub">HOME</NavLink>
       </div>
       <div className="">
         <span className="d-flex justify-content-end align-items-center">
