@@ -18,8 +18,8 @@ export default function Layout({
           </span>
         </section>
         <section>
-          <div className="bg-info d-flex align-items-center line-height-0">
-            <h2 className="fs-6 px-2 py-2 mb-0 flex-grow-1 align-text-bottom">
+          <div className="bg-info d-flex align-items-center line-height-1-5">
+            <h2 className="fs-6 px-2 py-2 mb-0 flex-grow-1 align-sub">
               {title}
             </h2>
           </div>
