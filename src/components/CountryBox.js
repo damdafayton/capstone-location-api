@@ -17,7 +17,7 @@ export default function CountryBox({ country, addClass }) {
     dispatch(setActiveCountry(country));
   }
   return (
-    <div className={`py-4 px-4 d-flex position-relative justify-content-between ${addClass} 
+    <div className={`py-3 px-4 d-flex position-relative justify-content-between ${addClass} 
     ${!tabs ? 'flex-column' : ''}`}
     >
       {!tabs
@@ -27,11 +27,11 @@ export default function CountryBox({ country, addClass }) {
             onClick={() => clickHandler()}
             className=""
           >
-            <img alt={`flag-${name}`} className="px-3 max-100" src={flagSvgLink(iso)} />
+            <img alt={`flag-${name}`} className="px-3 pt-3 max-100" src={flagSvgLink(iso)} />
           </Link>
         )}
       <Link to={`/country/${iso.toLowerCase()}`} onClick={() => clickHandler()} className="">
-        <h3 className={`pb-2 mb-0 pt-4 fs-5 text-white hover-1 ${!tabs ? 'text-end' : 'text-start'}`}>
+        <h3 className={`m-0 py-3 fs-5 text-white hover-1 ${!tabs ? 'text-end' : 'text-start'}`}>
           {name.toUpperCase()}
         </h3>
       </Link>

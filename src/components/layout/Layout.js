@@ -18,10 +18,11 @@ export default function Layout({
           </span>
         </section>
         <section>
-          <div className="d-flex align-items-center">
-            <h2 className="bg-info fs-6 px-2 py-2 mb-0 flex-grow-1">
+          <div className="bg-info d-flex align-items-center" id={title}>
+            {/* <h2 className="fs-6 px-2 py-2 mb-0 flex-grow-1">
               {title}
-            </h2>
+            </h2> */}
+            HELLO
           </div>
           <Neighbors neighbors={neighbors} />
         </section>
