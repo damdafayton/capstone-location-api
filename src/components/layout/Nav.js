@@ -45,14 +45,14 @@ export default function Nav() {
 
   return (
     <nav className="bg-primary text-white py-2 px-2 align-items-center row row-cols-3 m-0">
-      <div className='line-height-0'>
+      <div className="line-height-0">
         <FontAwesomeIcon
           onClick={() => navigate(-1)}
           icon="angle-left"
           className="hover-1 cursor-pointer"
         />
       </div>
-      <div className="text-center">
+      <div className="text-center align-text-bottom">
         <NavLink to="/" className="text-white hover-1">HOME</NavLink>
       </div>
       <div className="">

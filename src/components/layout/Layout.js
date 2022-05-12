@@ -19,7 +19,7 @@ export default function Layout({
         </section>
         <section>
           <div className="bg-info d-flex align-items-center">
-            <h2 className="fs-6 px-2 py-2 mb-0 flex-grow-1 align-middle">
+            <h2 className="fs-6 px-2 py-2 mb-0 flex-grow-1 align-text-bottom">
               {title}
             </h2>
           </div>
