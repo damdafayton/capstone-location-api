@@ -77,6 +77,10 @@ h3 {
   overflow-wrap: anywhere;
 }
 
+.line-height-0{
+  line-height: 0;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

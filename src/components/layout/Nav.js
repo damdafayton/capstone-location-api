@@ -45,7 +45,7 @@ export default function Nav() {
 
   return (
     <nav className="bg-primary text-white py-2 px-2 align-items-center row row-cols-3 m-0">
-      <div>
+      <div className='line-height-0'>
         <FontAwesomeIcon
           onClick={() => navigate(-1)}
           icon="angle-left"
