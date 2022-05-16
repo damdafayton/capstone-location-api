@@ -27,7 +27,7 @@ export default function Layout({
         </section>
       </main>
     )
-    : <p className="text-center text-white my-3">CAN NOT GET DATA FROM THE API CURRENTLY!</p>
+    : <p className="text-center text-white my-3">PLEASE WAIT WHILE YOUR LOCATION IS BEING DETECTED...</p>
   );
 }
 
