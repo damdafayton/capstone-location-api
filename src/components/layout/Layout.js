@@ -12,7 +12,7 @@ export default function Layout({
         <section className="min-vh-40 position-relative row row-cols-2 gx-4 px-2 mx-0 align-items-center fs-5">
           <img alt="flag" className="max-100 py-3 top-0 start-0" src={flagSvgLink(iso)} />
           <span className="">
-            <h1 className="wrap-text">
+            <h1 className="wrap-text of-wrap-hidden">
               {children}
             </h1>
           </span>
