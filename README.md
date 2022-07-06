@@ -1,10 +1,11 @@
-![](./capstone_location_ss.gif)
+![](./capstone_location_ss-wide.gif)
 
 # Location API - Capstone Project
 
 This application detects the location (country, city/state) of the visitor from the IP and shows the neighboring countries.
 
 Two API's are used in this project:
+
 1. https://www.geojs.io - to identify location data of the user based on ip
 2. https://api.geodatasource.com - to get the neighboring countries of the visitor's country
 
@@ -26,15 +27,19 @@ In the project directory, you can:
 - Launch your terminal,
 - `cd` into the directory where you want to clone your project,
 - Enter the commands below
+
 ```
 $ git clone git@github.com:damdafayton/bookstore.git
 $ npm install
 $ npm run proxy
 ```
+
 In seperate terminal:
+
 ```
 $ npm run dev
 ```
+
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
@@ -45,7 +50,9 @@ You may also see any lint errors in the console.
 ```
 $ npm run proxy
 ```
+
 In another terminal:
+
 ```
 $ npm test
 ```
@@ -75,7 +82,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-
 ## Authors
 
 👤 **damdafayton**
@@ -83,18 +89,15 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - [Github](https://github.com/damdafayton)
 - [LinkedIn](https://linkedin.com/in/damdafayton)
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
 
 ## 📝 License
 
