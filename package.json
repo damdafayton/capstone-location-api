@@ -2,9 +2,6 @@
   "name": "APP",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "14.17.3"
-  },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.17.7",
     "@babel/preset-react": "^7.16.7",
