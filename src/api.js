@@ -27,5 +27,8 @@ export const getNeighbors = (countryISO) => {
       const p = res.json();
       return p;
     })
-    .catch((error) => console.log('API ERROR = ', error));
+    // eslint-disable-next-line no-unused-vars
+    .catch((error) => {
+    // console.log('API ERROR = ', error)
+    });
 };
