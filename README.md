@@ -14,10 +14,6 @@ Two API's are used in this project:
 - HTML, CSS, JS
 - Bootstrap, SCSS, React, Redux
 
-## Live Demo
-
-- [Live Demo Link](https://damdafayton-countries.herokuapp.com/)
-
 ## Available Scripts
 
 In the project directory, you can:
