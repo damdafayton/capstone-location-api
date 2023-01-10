@@ -1,6 +1,6 @@
 ![](./capstone_location_ss-wide.gif)
 
-# Location API - Capstone Project
+# Location API - Who is My Neighbor
 
 This application detects the location (country, city/state) of the visitor from the IP and shows the neighboring countries.
 
