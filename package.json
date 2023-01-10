@@ -2,7 +2,7 @@
   "name": "APP",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://damdafayton.github.io/who-is-my-neighbor/build",
+  "homepage": "https://damdafayton.github.io/who-is-my-neighbor",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
