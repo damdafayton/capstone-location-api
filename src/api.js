@@ -16,6 +16,7 @@ export const getLocation = () =>
 export const getNeighbors = (countryISO) => {
   const headers = new Headers();
   headers.append("User-Agent", "PostmanRuntime/7.28.4");
+  headers.append("Origin", "damdafayton");
   const requestOptions = {
     method: "GET",
     redirect: "follow",
