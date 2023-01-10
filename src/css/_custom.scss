@@ -1,0 +1,14 @@
+$white: white;
+
+/* make the customizations */
+$theme-colors: (
+  "primary": #3d67b1,
+  "secondary": #4b82de,
+  "info": #30538a,
+  "light": #3b65af,
+  "dark": #3860a2,
+);
+
+:root {
+  --bs-body-bg: #30538a !important;
+}
