@@ -2,7 +2,7 @@
 const FIND_LOCATION_FROM_IP = 'https://get.geojs.io/v1/ip/geo.json';
 
 // https://www.geodatasource.com/
-const PROXY = 'http://ec2-44-212-74-130.compute-1.amazonaws.com/';
+const PROXY = 'http://ec2-52-91-240-132.compute-1.amazonaws.com';
 const GEODATA_KEY = process.env.REACT_APP_GEODATA_KEY;
 
 const FIND_NEIGHBORS_FROM_ISO = process.env.NODE_ENV === 'production'
