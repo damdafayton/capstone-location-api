@@ -13,13 +13,14 @@
         "sourceType": "module"
     },
     "extends": [
-        "airbnb",
+        // "airbnb",
         "plugin:react/recommended"
     ],
     "plugins": [
         "react"
     ],
     "rules": {
+        "quotes": "off",
         "react/jsx-filename-extension": [
             "warn",
             {
