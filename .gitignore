@@ -25,3 +25,4 @@ yarn-error.log*
 webpack.config.js
 webpack.config.js.lnk
 .notes.txt
+build/
