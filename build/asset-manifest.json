@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/who-is-my-neighbor/static/css/main.69913bbf.css",
+    "main.js": "/who-is-my-neighbor/static/js/main.3b6b8f6a.js",
+    "static/js/787.111e1f6b.chunk.js": "/who-is-my-neighbor/static/js/787.111e1f6b.chunk.js",
+    "static/media/Gill Sans Medium.otf": "/who-is-my-neighbor/static/media/Gill Sans Medium.6d4fc7f84156dec0ed02.otf",
+    "index.html": "/who-is-my-neighbor/index.html",
+    "main.69913bbf.css.map": "/who-is-my-neighbor/static/css/main.69913bbf.css.map",
+    "main.3b6b8f6a.js.map": "/who-is-my-neighbor/static/js/main.3b6b8f6a.js.map",
+    "787.111e1f6b.chunk.js.map": "/who-is-my-neighbor/static/js/787.111e1f6b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69913bbf.css",
+    "static/js/main.3b6b8f6a.js"
+  ]
+}
