@@ -4,7 +4,7 @@ const FIND_LOCATION_FROM_IP = "https://get.geojs.io/v1/ip/geo.json";
 
 // https://www.geodatasource.com/
 // ec2-52-91-240-132.compute-1.amazonaws.com
-const PROXY = "https://cors-anywhere-311686597.us-east-1.elb.amazonaws.com";
+const PROXY = "http://cors-anywhere-311686597.us-east-1.elb.amazonaws.com";
 const GEODATA_KEY = process.env.REACT_APP_GEODATA_KEY;
 
 const FIND_NEIGHBORS_FROM_ISO =
