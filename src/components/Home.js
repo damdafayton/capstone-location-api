@@ -1,13 +1,13 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import Layout from './layout/Layout';
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
+import Layout from "./layout/Layout";
 
-import { setNeighborsAsync } from '../redux/location/locationReducer';
+import { setNeighborsAsync } from "../redux/location/locationReducer";
 
 export default function Home() {
-  const {
-    neighbors, country, city, iso,
-  } = useSelector((state) => state.location);
+  const { neighbors, country, city, iso } = useSelector(
+    (state) => state.location
+  );
 
   const dispatch = useDispatch();
 
@@ -15,8 +15,8 @@ export default function Home() {
     dispatch(setNeighborsAsync(iso));
   }, [iso]);
 
-  return (country
-    && (
+  return (
+    country && (
       <Layout
         title="NEIGHBORING COUNTRIES"
         neighbors={neighbors}
@@ -24,7 +24,7 @@ export default function Home() {
         city={city}
         iso={iso}
       >
-        {`${country.toUpperCase()}${city ? `, ${city.toUpperCase()}` : ''}`}
+        {`${country.toUpperCase()}${city ? `, ${city.toUpperCase()}` : ""}`}
       </Layout>
     )
   );
